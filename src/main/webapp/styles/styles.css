@@ -47,6 +47,22 @@
     height: 85%;
 }
 
+#multiplication table td {
+    padding: 5px;
+}
+
+.multi-1 {
+    background-color: red;
+}
+
+.multi-2 {
+    background-color: green;
+}
+
+.multi-3 {
+    background-color: blue;
+}
+
 #footer {
     position: absolute;
     left: 0;
