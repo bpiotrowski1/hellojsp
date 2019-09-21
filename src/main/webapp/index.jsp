@@ -3,9 +3,11 @@
 <body>
     <h1>Hello JSP!</h1>
     <p>
-        <%= new Date() %><br/>
-        <%= 100 * Math.PI %><br/>
-        <%= 22 < 1 %>
+        <%
+            for (int i = 0; i < 10; i++) {
+                out.println("Hello JSP " + i + "<br/>");
+            }
+        %>
     </p>
 </body>
 </html>
