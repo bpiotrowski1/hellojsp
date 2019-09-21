@@ -13,6 +13,6 @@
         <div class="menu-sec"><a href="/">Main page</a></div>
         <div class="menu-sec"><a href="uptime.jsp">Uptime</a></div>
         <div class="menu-sec"><a href="number.jsp">Random number</a></div>
-        <div class="menu-sec"><a href="multiplication.jsp">Multiplication table</a></div>
+        <div class="menu-sec"><a href="multi-form.jsp">Multiplication table</a></div>
     </div>
 </div>
