@@ -1,0 +1,58 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-bottom: 25px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#menu {
+    width: 100%;
+    background-color: #2EE845;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu h3 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.menu-sec {
+    width: 9%;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    vertical-align: auto;
+    display: inline-block;
+}
+
+.menu-sec a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-sec a:hover {
+    color: #EAFF33;
+}
+
+#container {
+    width: 800px;
+    margin: 75px auto 30px;
+    height: 85%;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2EE845;
+    color: black;
+    text-align: center;
+}
