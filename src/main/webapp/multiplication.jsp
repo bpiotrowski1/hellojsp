@@ -1,5 +1,5 @@
 <%@ include file="header.jsp" %>
-<div id="container">
+<div class="container">
     <h1>Multiplication table</h1>
     <div id="multiplication">
         <table border="1">

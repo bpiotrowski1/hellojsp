@@ -2,17 +2,20 @@
 <html>
 <head>
     <title>Hello JSP!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-<div id="header">
+<header id="header">
     <div id="menu">
-        <div class="menu-sec"><h3>Hello JSP</h3></div>
-        <div class="menu-sec"></div>
-        <div class="menu-sec"><a href="/">Main page</a></div>
-        <div class="menu-sec"><a href="uptime.jsp">Uptime</a></div>
-        <div class="menu-sec"><a href="number.jsp">Random number</a></div>
-        <div class="menu-sec"><a href="multi-form.jsp">Multiplication table</a></div>
+        <h3 class="masthead-brand nav-link">HELLO JSP!</h3>
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Main page</a>
+            <a class="nav-link" href="uptime.jsp">Uptime</a>
+            <a class="nav-link" href="number.jsp">Random number</a>
+            <a class="nav-link" href="multi-form.jsp">Multiplication table</a>
+        </nav>
     </div>
-</div>
+</header>

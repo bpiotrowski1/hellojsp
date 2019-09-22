@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="header.jsp" %>
-<div id="container">
+<div class="container">
     <h1>Multiplication table form</h1>
     <form action="multiplication.jsp" method="POST">
         <label for="rozmiarx">Rozmiar X = </label>

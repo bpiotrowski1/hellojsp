@@ -1,6 +1,6 @@
 <%@ page import="java.util.Random" %>
 <%@ include file="header.jsp" %>
-<div id="container">
+<div class="container">
     <h1>Random number</h1>
     <p>
         <%
