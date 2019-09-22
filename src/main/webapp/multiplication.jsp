@@ -1,15 +1,20 @@
 <%@ page import="pl.piotrowskib.MultiplicationService" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="header.jsp" %>
+<jsp:include page="header.jsp">
+    <jsp:param name="active" value="4"/>
+</jsp:include>
 <div class="container">
     <h1>Multiplication table</h1>
+    <hr/>
     <div id="multiplication">
         <form action="multiplication.jsp" method="POST">
-            <label for="rozmiarx">Rozmiar X = </label>
-            <input type="number" id="rozmiarx" name="rozmiarx"/><br/>
-            <label for="rozmiary">Rozmiar Y = </label>
-            <input type="number" id="rozmiary" name="rozmiary"/><br/>
-            <input type="submit" value="Wyślij"/>
+            <div class="form-group">
+                <input type="number" class="form-control" id="rozmiarx" name="rozmiarx" placeholder="Rozmiar X" min="1" max="13"/>
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="rozmiary" name="rozmiary" placeholder="Rozmiar Y" min="1" max="13"/>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Wyślij"/>
         </form>
         <%
             MultiplicationService multiplicationService = new MultiplicationService();

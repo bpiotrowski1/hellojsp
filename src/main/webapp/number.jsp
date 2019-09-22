@@ -1,7 +1,10 @@
 <%@ page import="java.util.Random" %>
-<%@ include file="header.jsp" %>
+<jsp:include page="header.jsp">
+    <jsp:param name="active" value="3"/>
+</jsp:include>
 <div class="container">
     <h1>Random number</h1>
+    <hr/>
     <p>
         <%
             Random rand = new Random();
