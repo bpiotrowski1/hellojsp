@@ -1,14 +1,18 @@
-<%@ page import="java.util.Date" %>
-<%@ include file="header.jsp" %>
-<%!
-    private  String makeItLower(String data) {
-        return data.toLowerCase();
-    }
-%>
-<body>
-    <h1>Hello JSP!</h1>
+<jsp:include page="header.jsp">
+    <jsp:param name="active" value="1"/>
+</jsp:include>
+<div class="container">
+    <h1>Main page</h1>
+    <hr/>
     <p>
-        <%= makeItLower("WIELKIE LITERY") %>
+        <%--Hello, <%= (request.getParameter("firstName") != null && !request.getParameter("firstName").isEmpty()) ? request.getParameter("firstName") : "JSP" %>--%>
+        <%
+            String firstName = request.getParameter("firstName");
+            if(firstName != null && !firstName.isEmpty()) {
+                session.setAttribute("firstName", firstName);
+            }
+        %>
+        Hello, <%= session.getAttribute("firstName") != null ? session.getAttribute("firstName") : "JSP" %>!
     </p>
-</body>
-</html>
+</div>
+<%@ include file="footer.jsp"%>
