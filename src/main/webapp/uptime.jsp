@@ -5,8 +5,8 @@
     <p>
         <%! private long uptime = System.nanoTime(); %>
         <%
-            out.print((System.nanoTime() - uptime) / Math.pow(10,9) + "s");
+            out.print((System.nanoTime() - uptime) / Math.pow(10, 9) + "s");
         %>
     </p>
 </div>
-<%@ include file="footer.jsp"%>
+<%@ include file="footer.jsp" %>

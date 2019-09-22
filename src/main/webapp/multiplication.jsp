@@ -4,11 +4,16 @@
     <div id="multiplication">
         <table border="1">
             <%
-                int x = Integer.parseInt(request.getParameter("rozmiarx"));
-                int y = Integer.parseInt(request.getParameter("rozmiary"));
-                for (int i = 1; i <= y; i++) {
+                Cookie cookieX = new Cookie("rozmiarX", request.getParameter("rozmiarx"));
+                Cookie cookieY = new Cookie("rozmiarY", request.getParameter("rozmiary"));
+                cookieX.setMaxAge(60*60*24*360);
+                cookieY.setMaxAge(60*60*24*360);
+                response.addCookie(cookieX);
+                response.addCookie(cookieY);
+
+                for (int i = 1; i <= Integer.parseInt(cookieY.getValue()); i++) {
                     out.print("<tr>");
-                    for (int j = 1; j <= x ; j++) {
+                    for (int j = 1; j <= Integer.parseInt(cookieX.getValue()) ; j++) {
                         if(i == j) {
                             out.print("<td class=\"multi-1\">" + i * j + "</td>");
                         } else if(i > j) {
