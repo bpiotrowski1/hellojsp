@@ -19,6 +19,13 @@
 
 .masthead-brand {
     float: left;
+    margin-top: 7px;
+    margin-left: 1rem;
+}
+
+.masthead-brand a, a:visited, a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .nav {
@@ -51,6 +58,10 @@
     margin-top: 75px;
     max-width: 42em;
     height: 89.5%;
+}
+
+#multiplication table td {
+    border: 1px solid black;
 }
 
 #multiplication table td {

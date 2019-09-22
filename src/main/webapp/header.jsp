@@ -10,12 +10,12 @@
 <body>
 <header id="header">
     <div id="menu">
-        <h3 class="masthead-brand nav-link">HELLO JSP!</h3>
+        <h3 class="masthead-brand"><a href="/">HELLO JSP!</a></h3>
         <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="/">Main page</a>
             <a class="nav-link" href="uptime.jsp">Uptime</a>
             <a class="nav-link" href="number.jsp">Random number</a>
-            <a class="nav-link" href="multi-form.jsp">Multiplication table</a>
+            <a class="nav-link" href="multiplication.jsp">Multiplication table</a>
         </nav>
     </div>
 </header>
