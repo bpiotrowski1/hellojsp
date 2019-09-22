@@ -3,9 +3,15 @@
 <div id="container">
     <h1>Uptime</h1>
     <p>
-        <%! private long uptime = System.nanoTime(); %>
+        <%! private long startTime = System.currentTimeMillis(); %>
         <%
-            out.print((System.nanoTime() - uptime) / Math.pow(10, 9) + "s");
+            long uptime = System.currentTimeMillis() - startTime;
+            long hours = uptime / 3600000;
+            long minutes = uptime / 60000 % 60;
+            long seconds = uptime / 1000 % 60;
+            String uptimeMessage = String.format("%dh %dm %ds", hours, minutes, seconds);
+
+            out.print(uptimeMessage);
         %>
     </p>
 </div>
